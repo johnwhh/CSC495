@@ -1,9 +1,9 @@
 module.exports = {
-    siteMetadata: {
-      title: `new`,
-        siteUrl: `https://www.yourdomain.tld`,
-    },
-    plugins: [
-
-    ]
-}
+  siteMetadata: {
+    title: "Jacks Gatsby Site",
+  },
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+  ],
+};
