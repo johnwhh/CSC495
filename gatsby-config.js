@@ -1,17 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: "Jacks Gatsby Site",
+    title: "Jack\'s Pokédex",
   },
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: `blog`,
-        path: `${__dirname}/blog`,
-      },
-    },
     "gatsby-plugin-mdx",
   ],
 };

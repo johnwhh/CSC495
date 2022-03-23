@@ -3,8 +3,8 @@ import Layout from '../components/layout'
 
 const AboutPage = () => {
   return (
-    <Layout pageTitle="About Me">
-      <p>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
+    <Layout pageTitle="About">
+      <p>I'm student at EKU. This is my Pokédex demo using Gatsby and React.</p>
     </Layout>
   )
 }
