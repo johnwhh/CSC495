@@ -18,6 +18,10 @@
   .nav-link-text {
     color: black;
   }
+  
+  ul {
+    list-style-type: none;
+   }
 
   .site-title {
     font-size: 3rem;

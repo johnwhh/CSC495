@@ -3,8 +3,8 @@ import Layout from '../components/layout'
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Pokédex">
-      <p>Welcome to my Pokédex.</p>
+    <Layout pageTitle="Home">
+      <p>Welcome to my page. Click around to find some cool stuff.</p>
     </Layout>
   )
 }
