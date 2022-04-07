@@ -1,21 +1,23 @@
 import React from "react"
 import Layout from '../components/layout'
+import Pokemon from "../components/pokemon";
+import useEndpoint from "../hooks/useEndpoint"
 
-const PokedexPage = ({data, pageContext}) => {
-  const {allPokemon} = pageContext;
+const PokedexPage = () => {
+  const {data, setData} = useEndpoint();
   return (
     <Layout pageTitle="Pokédex">
       <p>Welcome to my Pokédex.</p>
-      <div>
-        <ul>
-          {allPokemon.map(pokemon => (
-            <li key={pokemon.id}>
-              <img src={pokemon.sprites.front_default} alt={pokemon.name} />
-              <p>{pokemon.name}</p>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <main>
+        <input
+          type="search"
+          placeholder="Enter a pokemon..."
+          value={data.slug}
+          onChange={(e) => setData({...data, slug: e.target.value})}
+        />
+        <br />
+        {data.result != null ? <Pokemon pokemon={data.result} /> : null}
+      </main>
     </Layout>
   )
 }

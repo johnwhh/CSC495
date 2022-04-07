@@ -32,7 +32,7 @@ const Layout = ({pageTitle, children}) => {
             </Link>
           </li>
           <li className={navLinkItem}>
-            <Link to="/pokemon" className={navLinkText}>
+            <Link to="/pokedex" className={navLinkText}>
               Pokédex
             </Link>
           </li>
