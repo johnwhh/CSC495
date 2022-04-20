@@ -12,7 +12,7 @@ const useEndpoint = () => {
       const timeoutId = setTimeout(() => {
         const fetch = async () => {
           try {
-            const res = await endpoint.get(`/${data.slug}`);
+            const res = await endpoint.get(`/${data.slug.toLowerCase()}`);
             setData({...data, result: res.data});
           } catch (err) {
             console.error(err);
